@@ -1,0 +1,116 @@
+/*body{
+  background-image: url("https://export-download.canva.com/DAENdlsw9Dk/60/0/0001-13364118933.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20201120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201120T063105Z&X-Amz-Expires=8236&X-Amz-Signature=d07f26ea4a92928d348b16167648575b43dcd4774520c6ecb1785a3574819579&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Prevention%2520Image.png&response-expires=Fri%2C%2020%20Nov%202020%2008%3A48%3A21%20GMT");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}*/
+
+/*Flip Card*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  position: fixed;
+  margin-top: -550px;
+  margin-left: 50px;
+ width: 300px;
+  height: 150px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 300%;
+    height: 200%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: powderblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .img{
+    margin-top: -0px;
+  }
+  
+  .text{
+    position: fixed;
+    margin-top: 80px;
+    padding-left: 40px;
+  }
+  
+  .flip-card-back{
+    font-size: x-large;
+  }
+
+  .corona-virus{
+    display: flex;
+  
+  background-size: 100% 100%;
+  Width:100vw;
+  height: 100vh;
+  background-repeat:no-repeat;
+  }
+
+
+
+
+
+
+ 
+
+  /* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #634369;
+  color: white;
+}
